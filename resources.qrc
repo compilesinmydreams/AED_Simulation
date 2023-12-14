@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/device.png</file>
+        <file>images/power-button.png</file>
+        <file>images/asys.jpg</file>
+        <file>images/stable.jpg</file>
+        <file>images/vfib.jpg</file>
+        <file>images/vtach.jpg</file>
+        <file>images/black.jpg</file>
+    </qresource>
+</RCC>

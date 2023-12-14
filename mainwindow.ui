@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1097</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AED</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1101</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/device.png);
+background-color: rgba(255, 255, 255, 0);
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="powerButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+image: url(:/images/power-button.png);
+border-radius: 30px;
+background-color:rgb(237, 51, 59);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="adultPad1CheckBox">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+        background-color: #D5303D;
+    border: 2px solid navy;
+    border-radius: 5px;
+    padding: 5px;
+        color:white;
+    }
+QCheckBox:indicator{
+        border:none;
+}
+QCheckBox:disabled {
+        background-color: #4f060c;
+ }
+QCheckBox:checked {
+    background-color: #30D5C8;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Adult Pad 1</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="adultPad2CheckBox">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>380</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+        background-color: #D5303D;
+    border: 2px solid navy;
+    border-radius: 5px;
+    padding: 5px;
+        color:white;
+    }
+QCheckBox:indicator{
+        border:none;
+}
+QCheckBox:disabled {
+        background-color: #4f060c;
+ }
+QCheckBox:checked {
+    background-color: #30D5C8;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Adult Pad 2</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="childPad1CheckBox">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+        background-color: #D5303D;
+    border: 2px solid navy;
+    border-radius: 5px;
+    padding: 5px;
+        color:white;
+    }
+QCheckBox:indicator{
+        border:none;
+}
+QCheckBox:disabled {
+        background-color: #4f060c;
+ }
+QCheckBox:checked {
+    background-color: #30D5C8;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Child Pad 1</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="childPad2CheckBox">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>430</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+        background-color: #D5303D;
+    border: 2px solid navy;
+    border-radius: 5px;
+    padding: 5px;
+        color:white;
+    }
+QCheckBox:indicator{
+        border:none;
+}
+QCheckBox:disabled {
+        background-color: #4f060c;
+ }
+QCheckBox:checked {
+    background-color: #30D5C8;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Child Pad 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="batteryLabel">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>130</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>Battery:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="shockLabel">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>220</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string># of Shocks: 0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="badCPRButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>510</y>
+      <width>83</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bad CPR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="okCPRButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>510</y>
+      <width>83</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OK CPR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="goodCPRButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>510</y>
+      <width>83</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Good CPR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fullyReleaseCPRButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>550</y>
+      <width>281</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Don't Fully Release</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CPRLabel">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>230</y>
+      <width>75</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
